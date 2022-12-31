@@ -376,76 +376,7 @@ header .nav__menu a:hover::after {
   }
 }
 
-.swiper {
-  width: 100%;
-  height: 100vh;
-}
-.swiper img {
-  border-radius: 1rem;
-}
-.swiper .swiper-slide {
-  height: 100vh;
-}
-.swiper .project__presentation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: justify;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding: 5rem 0;
-}
-.swiper .project__presentation .wrap__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 3rem;
-  margin-bottom: 1rem;
-}
-.swiper .project__presentation .wrap__img img {
-  width: 40%;
-  height: 40%;
-  -webkit-box-shadow: 1px 1px 50px;
-          box-shadow: 1px 1px 50px;
-}
-.swiper .project__presentation h1 {
-  font-size: 3rem;
-  text-align: center;
-  margin-top: 1rem;
-}
-.swiper .project__presentation h1 span {
-  color: crimson;
-}
-.swiper .project__presentation p {
-  font-size: 1rem;
-  padding: 3rem;
-}
-@media screen and (max-width: 1024px) {
-  .swiper .project__presentation h1 {
-    font-size: 40px;
-  }
-  .swiper .project__presentation p {
-    font-size: 18px;
-    padding: 2rem;
-  }
-}
-.swiper .rpg__game {
+.project__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -453,172 +384,173 @@ header .nav__menu a:hover::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 5rem 0;
-  font-size: 1rem;
-}
-.swiper .rpg__game .rpg__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 1rem;
   padding: 1rem;
 }
-.swiper .rpg__game .rpg__img img {
-  margin: 1rem 0;
+.project__container img {
   width: 60%;
-  -webkit-box-shadow: 1px 1px 50px;
-          box-shadow: 1px 1px 50px;
 }
-.swiper .rpg__game .rpg__img p {
-  margin: 1rem 0;
-}
-.swiper .rpg__game .rpg__img a {
-  padding: 1rem;
-  background-color: rgb(220, 20, 60);
-  text-decoration: none;
-  color: black;
-  border-radius: 5px;
-}
-.swiper .rpg__game .rpg__img a:hover {
-  scale: 1.1;
-}
-@media screen and (max-width: 1024px) {
-  .swiper .rpg__game .rpg__img h1 {
-    font-size: 40px;
-  }
-  .swiper .rpg__game .rpg__img p {
-    font-size: 18px;
-  }
-}
-.swiper .rpg__game .rpg__presentation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  padding: 1rem;
-}
-.swiper .rpg__game .rpg__presentation h1 {
+.project__container h1 {
   color: crimson;
-  font-size: 2.5rem;
-  margin: 2rem 0;
+  text-align: center;
 }
-.swiper .rpg__game .rpg__presentation .first__p {
-  margin: 1rem 0;
-}
-.swiper .rpg__game .rpg__presentation .rpg__notion p {
-  margin: 1rem 0;
-}
-.swiper .rpg__game .rpg__presentation .rpg__notion .rpg__tab {
-  list-style: circle;
-  padding: 0 2rem;
-}
-@media screen and (max-width: 1024px) {
-  .swiper .rpg__game .rpg__presentation {
-    font-size: 16px;
-  }
-  .swiper .rpg__game .rpg__presentation h1 {
-    font-size: 24px;
-  }
-}
-.swiper .first__portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  margin: 1rem;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: flex-start;
-}
-.swiper .first__portfolio .top__portfolio {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 3rem;
-  margin: 2rem;
-}
-.swiper .first__portfolio .top__portfolio .link__snake {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-.swiper .first__portfolio .top__portfolio a {
-  padding: 1rem;
-  background-color: rgb(220, 20, 60);
+.project__container a {
   text-decoration: none;
+  padding: 1rem;
   color: black;
-  margin: 0 1rem;
+  background-color: crimson;
   border-radius: 5px;
   text-align: center;
 }
-.swiper .first__portfolio .top__portfolio img {
-  -webkit-box-shadow: 1px 1px 50px;
-          box-shadow: 1px 1px 50px;
+.project__container .bar {
+  content: "";
+  width: 10rem;
+  height: 2px;
+  background-color: crimson;
+  margin: 2rem auto;
 }
-.swiper .first__portfolio .bot__portfolio {
+.project__container .project__presentation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  gap: 1rem;
+}
+.project__container .project__presentation .wrap__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   gap: 1rem;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 2rem;
 }
-.swiper .first__portfolio .bot__portfolio h1 {
-  margin-top: 2rem;
-  color: crimson;
-  text-align: center;
-}
-.swiper .first__portfolio .bot__portfolio p {
-  width: 90%;
-  text-align: justify;
-  margin-top: 1rem;
+.project__container .project__presentation .wrap__img img {
+  width: 40%;
+  border-radius: 1rem;
+  height: 15rem;
 }
 @media screen and (max-width: 1024px) {
-  .swiper h1 {
-    font-size: 40px;
+  .project__container .project__presentation .wrap__img img {
+    height: 8rem;
   }
-  .swiper p {
-    font-size: 18px;
+}
+.project__container .project__presentation .presentation__content {
+  padding: 0 2rem;
+  text-align: justify;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 1rem;
+}
+.project__container .rpg__game {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.project__container .rpg__game img {
+  width: 40%;
+  border-radius: 1rem;
+}
+.project__container .rpg__game .rpg__img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.project__container .rpg__game .rpg__presentation {
+  text-align: justify;
+}
+.project__container .rpg__game .rpg__presentation h1 {
+  text-align: center;
+}
+.project__container .rpg__game .rpg__presentation .rpg__p {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 1rem;
+}
+.project__container .rpg__game .rpg__presentation .rpg__p li {
+  margin-left: 2rem;
+}
+.project__container .first__portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.project__container .first__portfolio img {
+  width: 40%;
+  border-radius: 1rem;
+  margin-bottom: 1rem;
+}
+.project__container .first__portfolio .top__portfolio {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+}
+.project__container .first__portfolio .bot__portfolio {
+  text-align: justify;
+  padding: 1rem;
+}
+.project__container .first__portfolio .bot__portfolio h1 {
+  margin-bottom: 1rem;
+}
+@media screen and (max-width: 1024px) {
+  .project__container {
+    font-size: 16px;
+  }
+  .project__container h1 {
+    font-size: 24px;
+  }
+  .project__container a {
+    padding: 0.5rem;
   }
 }
 

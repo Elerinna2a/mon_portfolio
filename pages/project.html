@@ -56,125 +56,98 @@
       </ul>
     </header>
 
-    <!-- ========== swiper =========== -->
-    <div class="swiper mySwiper">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide project__presentation">
-          <!--  ===== presentation swiper ====== -->
-          <div class="wrap__img">
-            <img src="/img/gameRpgJava.png" alt="rpg spoiler" />
-            <img src="/img/firstPort.png" alt="portfolio spoiler" />
-          </div>
-          <div>
-            <h1><span>M</span>es projets</h1>
-            <p>
-              Ici, vous trouverez tous mes projets perso, tous les projets faits
-              Durant mon année au sein d'Aflokkat, sur toutes les compétences
-              acquises pendant cette année de formation.
-            </p>
-            <p>
-              Cela varie entre HTML, CSS, JAVASCRIPT ainsi que du PHPMYADMIN.
-              Mais aussi du JAVA(Création d'un jeu rpg jouable sur terminal par
-              exemple) ou de l'algorithmie sur PYTHON
-            </p>
-            <p>
-              Si tu es curieu(se), slide vers le bas pour voir quelques-uns de
-              ces projets !
-            </p>
-          </div>
+    <!-- ========== project =========== -->
+    <div class="project__container">
+      <div class="project__presentation">
+        <!--  ===== presentation project ====== -->
+        <div class="wrap__img">
+          <img src="/img/gameRpgJava.png" alt="rpg spoiler" />
+          <img src="/img/firstPort.png" alt="portfolio spoiler" />
         </div>
-
-        <!--  ======== javarpg swiper ======== -->
-        <div class="swiper-slide rpg__game">
-          <div class="rpg__img">
-            <img
-              src="/img/gameRpgJava.png"
-              alt=""
-              onclick="window.open(this.src,'_blank');"
-            />
-            <p>Clique dessus ↑</p>
-            <p>
-              <a
-                href="https://github.com/Elerinna2a/Java-learning/tree/main/First-game"
-                target="_blank"
-                >Code github</a
-              >
-            </p>
-          </div>
-          <div class="rpg__presentation">
-            <h1>Rpg game like sur Java</h1>
-            <div class="rpg__p">
-              <p class="first__p">
+        <div class="presentation__content">
+          <h1><span>M</span>es projets</h1>
+          <p>
+            Ici, vous trouverez tous mes projets perso, tous les projets faits
+            Durant mon année au sein d'Aflokkat, sur toutes les compétences
+            acquises pendant cette année de formation.
+          </p>
+          <p>
+            Cela varie entre HTML, CSS, JAVASCRIPT ainsi que du PHPMYADMIN. Mais
+            aussi du JAVA(Création d'un jeu rpg jouable sur terminal par
+            exemple) ou de l'algorithmie sur PYTHON
+          </p>
+          <p>
+            Si tu es curieu(se), slide vers le bas pour voir quelques-uns de ces
+            projets !
+          </p>
+        </div>
+      </div>
+      <div class="bar"></div>
+      <!-- ========= rpg project ========== -->
+      <div class="rpg__game">
+        <div class="rpg__img">
+          <img
+            src="/img/gameRpgJava.png"
+            alt=""
+            onclick="window.open(this.src,'_blank');"
+          />
+          <p>Clique dessus ↑</p>
+          <p>
+            <a
+              href="https://github.com/Elerinna2a/Java-learning/tree/main/First-game"
+              target="_blank"
+              >Code github</a
+            >
+          </p>
+        </div>
+        <div class="rpg__presentation">
+          <h1>Rpg game like sur Java</h1>
+          <div class="rpg__p">
+            <div class="rpg__notion">
+              <p>
                 Mon tout premier TP en Java fait en cours chez Aflokkat.
+                <br />Dans celui ci, nous avons puis voir quelques notions:
               </p>
-              <div class="rpg__notion">
-                <p>Dans celui ci, nous avons puis voir quelques notions:</p>
-                <ul class="rpg__tab">
-                  <li>Objet</li>
-                  <li>Constructeur</li>
-                  <li>Héritage</li>
-                  <li>Class abstract</li>
-                  <li>Arraylist</li>
-                </ul>
-                <p>En résumé, les débuts de l'apprentissage sur Java.</p>
-              </div>
+              <ul class="rpg__tab">
+                <li>Objet</li>
+                <li>Constructeur</li>
+                <li>Héritage</li>
+                <li>Class abstract</li>
+                <li>Arraylist</li>
+              </ul>
+              <p>En résumé, les débuts de l'apprentissage sur Java.</p>
             </div>
           </div>
         </div>
-
-        <!-- ======= website portfolio swiper ====== -->
-        <div class="swiper-slide first__portfolio">
-          <div class="top__portfolio">
-            <img src="/img/firstPort.png" alt="portfolio photo" width="60%" />
-            <div class="link__snake">
-              <a
-                href="https://github.com/Elerinna2a/Web_learning/tree/main/First_portfolio"
-                target="_blank"
-                >Vers github</a
-              >
-              <a
-                href="https://codepen.io/Elerinna2a/pen/LYBNMvv"
-                target="_blank"
-                >Vers codepen</a
-              >
-            </div>
-          </div>
-          <div class="bot__portfolio">
-            <h1>Un peu de js learning</h1>
-            <p>
-              À travers ce portfolio ci dessus, j'ai mis en pratique quelques
-              notions de Javascript appris en dehors de ma formation actuelle.
-            </p>
-            <p>
-              Rien d'extravaguant, quelques TIMELINE, des events via click ou
-              reload etc...
-            </p>
+      </div>
+      <div class="bar"></div>
+      <!-- ======= website portfolio swiper ====== -->
+      <div class="first__portfolio">
+        <div class="top__portfolio">
+          <img src="/img/firstPort.png" alt="portfolio photo" width="60%" />
+          <div class="link__portfolio">
+            <a
+              href="https://github.com/Elerinna2a/Web_learning/tree/main/First_portfolio"
+              target="_blank"
+              >Vers github</a
+            >
+            <a href="https://codepen.io/Elerinna2a/pen/LYBNMvv" target="_blank"
+              >Vers codepen</a
+            >
           </div>
         </div>
-        <div class="swiper-pagination">a</div>
+        <div class="bot__portfolio">
+          <h1>Un peu de js learning</h1>
+          <p>
+            À travers ce portfolio ci dessus, j'ai mis en pratique quelques
+            notions de Javascript appris en dehors de ma formation actuelle.
+          </p>
+          <p>
+            Rien d'extravaguant, quelques TIMELINE, des events via click ou
+            reload etc...
+          </p>
+        </div>
       </div>
     </div>
-
-    <!-- Swiper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-
-    <!-- Initialize Swiper -->
-    <script>
-      var swiper = new Swiper(".mySwiper", {
-        direction: "vertical",
-        slidesPerView: 1,
-        parallax: true,
-        spaceBetween: 10,
-        mousewheel: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
-        },
-        keyboard: {
-          enabled: true,
-          onlyInViewport: false,
-        },
-      });
-    </script>
   </body>
 </html>

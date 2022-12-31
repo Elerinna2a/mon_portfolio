@@ -16,6 +16,10 @@
     background-color: crimson;
     border-radius: 5px;
     text-align: center;
+
+    &:hover {
+      scale: 1.1;
+    }
   }
 
   .bar {

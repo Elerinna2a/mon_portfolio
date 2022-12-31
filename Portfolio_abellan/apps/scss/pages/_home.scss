@@ -1,0 +1,196 @@
+//  =========== home content ===============
+.home__content {
+  background: url(/img/common-bg.svg);
+  background-position: center;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  min-height: 59.9rem;
+  max-height: 80rem;
+  gap: 2rem;
+
+  h1 {
+    font-size: 50px;
+    padding: 2rem;
+    text-align: center;
+    @media screen and (max-width: 1080px) {
+      font-size: 35px;
+    }
+  }
+
+  .home__text {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .home__infos {
+    display: flex;
+    text-align: center;
+    margin: 0 10rem;
+    @media screen and (max-width: 1080px) {
+      margin: 0 2rem;
+    }
+  }
+
+  .home__cv {
+    text-align: center;
+    margin: 2rem;
+    display: flex;
+    justify-content: center;
+    gap: 3rem;
+
+    a {
+      padding: 1rem;
+      background-color: rgb(220, 20, 60);
+      color: black;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 2px 2px 20px;
+      transition: 0.5s ease-out;
+
+      &:first-child {
+        padding: 1rem 2.5rem;
+      }
+
+      &:hover {
+        scale: 1.1;
+      }
+    }
+  }
+
+  .home__social {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+
+    a {
+      padding: 1rem;
+      background-color: white;
+      font-size: 1.5rem;
+      color: black;
+      transition: 0.5s ease-out;
+
+      &:hover {
+        transform: scale(1.2);
+      }
+    }
+
+    @media screen and (max-width: 1080px) {
+      display: none;
+    }
+  }
+  @media screen and (max-width: 1080px) {
+    min-height: 40rem;
+  }
+}
+
+//  ========== about content =========
+
+.about__content {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 12rem 0;
+  margin: auto;
+
+  .about__title {
+    text-align: center;
+    padding: 2rem;
+    position: relative;
+
+    span {
+      color: crimson;
+    }
+
+    .p__bar {
+      border-bottom: 3px solid crimson;
+      width: 5rem;
+      display: flex;
+      position: relative;
+      margin: 1rem auto 1rem auto;
+    }
+  }
+
+  .about__infos {
+    display: grid;
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 1rem;
+    gap: 5rem;
+    grid-template-columns: 2fr 1fr;
+    align-items: baseline;
+    @media screen and (max-width: 1024px) {
+      display: flex;
+      flex-direction: column-reverse;
+    }
+
+    h3 {
+      margin-bottom: 1rem;
+    }
+
+    .about__me {
+      text-align: justify;
+      p {
+        margin-bottom: 0.5rem;
+      }
+      a {
+        text-decoration: none;
+        color: crimson;
+      }
+    }
+    #about__contact {
+      display: flex;
+      justify-content: center;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 2rem;
+      background-color: rgb(220, 20, 60);
+      padding: 1rem;
+      width: 10rem;
+      box-shadow: 2px 2px 20px;
+      transition: 0.5s ease-out;
+      a {
+        color: black;
+        font-weight: bold;
+      }
+      &:hover {
+        scale: (1.1);
+      }
+    }
+  }
+  .about__skill {
+    display: flex;
+    align-items: center;
+    padding: 1rem;
+    flex-direction: column;
+
+    .skills {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .skill {
+      background-color: lightgray;
+      width: auto;
+      height: 3rem;
+      padding: 1rem;
+      text-align: center;
+      display: flex;
+      margin: 10px;
+      align-items: center;
+      border-radius: 0.3rem;
+      box-shadow: 1px 1px 5px;
+      color: rgb(104, 103, 103);
+    }
+  }
+
+  @media screen and (max-width: 1024px) {
+    flex-direction: column;
+  }
+}
+
+//  ========== project content ===========

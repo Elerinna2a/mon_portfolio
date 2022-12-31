@@ -1,0 +1,18 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  font-family: "JetBrains Mono", monospace;
+  scroll-behavior: smooth;
+}
+
+::selection {
+  background-color: rgb(220, 20, 60, 0.8);
+  color: white;
+}
+
+/* Firefox */
+::-moz-selection {
+  background-color: rgb(220, 20, 60, 0.8);
+  color: white;
+}

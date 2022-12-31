@@ -1,0 +1,198 @@
+.swiper {
+  width: 100%;
+  height: 100vh;
+
+  img {
+    border-radius: 1rem;
+  }
+
+  .swiper-slide {
+    height: 100vh;
+  }
+  // ======== presentation swiper ===========
+  .project__presentation {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: justify;
+    flex-direction: column;
+    padding: 5rem 0;
+
+    .wrap__img {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: center;
+      justify-content: center;
+      gap: 3rem;
+      margin-bottom: 1rem;
+
+      img {
+        width: 40%;
+        height: 40%;
+        box-shadow: 1px 1px 50px;
+      }
+    }
+
+    h1 {
+      font-size: 3rem;
+      text-align: center;
+      margin-top: 1rem;
+      span {
+        color: crimson;
+      }
+    }
+    p {
+      font-size: 1rem;
+      padding: 3rem;
+    }
+
+    @media screen and (max-width: 1024px) {
+      h1 {
+        font-size: 40px;
+      }
+      p {
+        font-size: 18px;
+        padding: 2rem;
+      }
+    }
+  }
+  // =========== rpg swiper ==========
+  .rpg__game {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 5rem 0;
+    font-size: 1rem;
+
+    .rpg__img {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      margin: 1rem;
+      padding: 1rem;
+
+      img {
+        margin: 1rem 0;
+        width: 60%;
+        box-shadow: 1px 1px 50px;
+      }
+      p {
+        margin: 1rem 0;
+      }
+
+      a {
+        padding: 1rem;
+        background-color: rgb(220, 20, 60);
+        text-decoration: none;
+        color: black;
+        border-radius: 5px;
+        &:hover {
+          scale: (1.1);
+        }
+      }
+
+      @media screen and (max-width: 1024px) {
+        h1 {
+          font-size: 40px;
+        }
+        p {
+          font-size: 18px;
+        }
+      }
+    }
+
+    .rpg__presentation {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 1rem;
+      h1 {
+        color: crimson;
+        font-size: 2.5rem;
+        margin: 2rem 0;
+      }
+
+      .first__p {
+        margin: 1rem 0;
+      }
+
+      .rpg__notion {
+        p {
+          margin: 1rem 0;
+        }
+        .rpg__tab {
+          list-style: circle;
+          padding: 0 2rem;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        font-size: 16px;
+        h1 {
+          font-size: 24px;
+        }
+      }
+    }
+  }
+
+  // ========= portfolio swiper ==========
+  .first__portfolio {
+    display: flex;
+    flex-direction: column;
+    margin: 1rem;
+    justify-content: flex-start;
+
+    .top__portfolio {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 3rem;
+      margin: 2rem;
+
+      .link__snake {
+        display: flex;
+      }
+
+      a {
+        padding: 1rem;
+        background-color: rgb(220, 20, 60);
+        text-decoration: none;
+        color: black;
+        margin: 0 1rem;
+        border-radius: 5px;
+        text-align: center;
+      }
+      img {
+        box-shadow: 1px 1px 50px;
+      }
+    }
+
+    .bot__portfolio {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      h1 {
+        margin-top: 2rem;
+        color: crimson;
+        text-align: center;
+      }
+      p {
+        width: 90%;
+        text-align: justify;
+        margin-top: 1rem;
+      }
+    }
+  }
+  @media screen and (max-width: 1024px) {
+    h1 {
+      font-size: 40px;
+    }
+    p {
+      font-size: 18px;
+    }
+  }
+}

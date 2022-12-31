@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/css/style.css" />
+    <link rel="shortcut icon" href="/img/me.png" type="image/x-icon" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+    <!--  ========= jetbrains family ========== -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <!--  ========== google icons =========== -->
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+    <!--  ========== icons scoot ========== -->
+    <link
+      rel="stylesheet"
+      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
+    />
+    <title>Portfolio Abellan Antony</title>
+  </head>
+  <body>
+    <header>
+      <!--  ======= logo + title ======= -->
+      <div class="header__right">
+        <div class="logo__header">
+          <img
+            src="/img/me.png"
+            alt="Photo header"
+            width="50px"
+            height="50px"
+          />
+        </div>
+        <div class="home">
+          <a href="/index.html">
+            <span class="title__header">
+              <p><strong>A</strong>bellan <strong>A</strong>ntony.</p>
+            </span>
+          </a>
+        </div>
+      </div>
+      <!-- ======= menu header ======= -->
+      <ul class="nav__menu">
+        <li><a href="../index.html">Home</a></li>
+        <li><a href="mailto:abellan.antony@gmail.com">Contact</a></li>
+      </ul>
+    </header>
+
+    <!-- ========== swiper =========== -->
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide project__presentation">
+          <!--  ===== presentation swiper ====== -->
+          <div class="wrap__img">
+            <img src="/img/gameRpgJava.png" alt="rpg spoiler" />
+            <img src="/img/firstPort.png" alt="portfolio spoiler" />
+          </div>
+          <div>
+            <h1><span>M</span>es projets</h1>
+            <p>
+              Ici, vous trouverez tous mes projets perso, tous les projets faits
+              Durant mon année au sein d'Aflokkat, sur toutes les compétences
+              acquises pendant cette année de formation.
+            </p>
+            <p>
+              Cela varie entre HTML, CSS, JAVASCRIPT ainsi que du PHPMYADMIN.
+              Mais aussi du JAVA(Création d'un jeu rpg jouable sur terminal par
+              exemple) ou de l'algorithmie sur PYTHON
+            </p>
+            <p>
+              Si tu es curieu(se), slide vers le bas pour voir quelques-uns de
+              ces projets !
+            </p>
+          </div>
+        </div>
+
+        <!--  ======== javarpg swiper ======== -->
+        <div class="swiper-slide rpg__game">
+          <div class="rpg__img">
+            <img
+              src="/img/gameRpgJava.png"
+              alt=""
+              onclick="window.open(this.src,'_blank');"
+            />
+            <p>Clique dessus ↑</p>
+            <p>
+              <a
+                href="https://github.com/Elerinna2a/Java-learning/tree/main/First-game"
+                target="_blank"
+                >Code github</a
+              >
+            </p>
+          </div>
+          <div class="rpg__presentation">
+            <h1>Rpg game like sur Java</h1>
+            <div class="rpg__p">
+              <p class="first__p">
+                Mon tout premier TP en Java fait en cours chez Aflokkat.
+              </p>
+              <div class="rpg__notion">
+                <p>Dans celui ci, nous avons puis voir quelques notions:</p>
+                <ul class="rpg__tab">
+                  <li>Objet</li>
+                  <li>Constructeur</li>
+                  <li>Héritage</li>
+                  <li>Class abstract</li>
+                  <li>Arraylist</li>
+                </ul>
+                <p>En résumé, les débuts de l'apprentissage sur Java.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- ======= website portfolio swiper ====== -->
+        <div class="swiper-slide first__portfolio">
+          <div class="top__portfolio">
+            <img src="/img/firstPort.png" alt="portfolio photo" width="60%" />
+            <div class="link__snake">
+              <a
+                href="https://github.com/Elerinna2a/Web_learning/tree/main/First_portfolio"
+                target="_blank"
+                >Vers github</a
+              >
+              <a
+                href="https://codepen.io/Elerinna2a/pen/LYBNMvv"
+                target="_blank"
+                >Vers codepen</a
+              >
+            </div>
+          </div>
+          <div class="bot__portfolio">
+            <h1>Un peu de js learning</h1>
+            <p>
+              À travers ce portfolio ci dessus, j'ai mis en pratique quelques
+              notions de Javascript appris en dehors de ma formation actuelle.
+            </p>
+            <p>
+              Rien d'extravaguant, quelques TIMELINE, des events via click ou
+              reload etc...
+            </p>
+          </div>
+        </div>
+        <div class="swiper-pagination">a</div>
+      </div>
+    </div>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        direction: "vertical",
+        slidesPerView: 1,
+        parallax: true,
+        spaceBetween: 10,
+        mousewheel: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        keyboard: {
+          enabled: true,
+          onlyInViewport: false,
+        },
+      });
+    </script>
+  </body>
+</html>

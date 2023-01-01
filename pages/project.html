@@ -58,25 +58,25 @@
 
     <!-- ========== project =========== -->
     <div class="project__container">
-      <div class="project__presentation">
+      <div class="project__presentation reveal">
         <!--  ===== presentation project ====== -->
-        <div class="wrap__img">
+        <div class="wrap__img reveal-1">
           <img src="/img/gameRpgJava.png" alt="rpg spoiler" />
           <img src="/img/firstPort.png" alt="portfolio spoiler" />
         </div>
         <div class="presentation__content">
           <h1><span>M</span>es projets</h1>
-          <p>
+          <p class="reveal-2">
             Ici, vous trouverez tous mes projets perso, tous les projets faits
             Durant mon année au sein d'Aflokkat, sur toutes les compétences
             acquises pendant cette année de formation.
           </p>
-          <p>
+          <p class="reveal-3">
             Cela varie entre HTML, CSS, JAVASCRIPT ainsi que du PHPMYADMIN. Mais
             aussi du JAVA(Création d'un jeu rpg jouable sur terminal par
             exemple) ou de l'algorithmie sur PYTHON
           </p>
-          <p class="reveal-3">
+          <p class="reveal-4">
             Si tu es curieu(se), slide vers le bas pour voir quelques-uns de ces
             projets !
           </p>
@@ -124,8 +124,13 @@
       <!-- ======= website portfolio swiper ====== -->
       <div class="first__portfolio reveal">
         <div class="top__portfolio">
-          <img src="/img/firstPort.png" alt="portfolio photo" width="60%" />
-          <div class="link__portfolio">
+          <img
+            src="/img/firstPort.png"
+            alt="portfolio photo"
+            width="60%"
+            class="reveal-1"
+          />
+          <div class="link__portfolio reveal-2">
             <a
               href="https://github.com/Elerinna2a/Web_learning/tree/main/First_portfolio"
               target="_blank"
@@ -136,7 +141,7 @@
             >
           </div>
         </div>
-        <div class="bot__portfolio">
+        <div class="bot__portfolio reveal-3">
           <h1>Un peu de js learning</h1>
           <p>
             À travers ce portfolio ci dessus, j'ai mis en pratique quelques
@@ -151,14 +156,14 @@
       <div class="bar"></div>
       <!-- ========= slide img ============= -->
       <div class="slide__img reveal">
-        <div>
+        <div class="reveal-1">
           <img name="slide" src="https://source.unsplash.com/random" />
         </div>
         <div class="slide__content">
-          <div class="slide__link">
+          <div class="slide__link reveal-2">
             <a href="https://codepen.io/Elerinna2a/pen/JjBKKaJ">Codepen</a>
           </div>
-          <div class="slide__presentation">
+          <div class="slide__presentation reveal-3">
             <h1>Apprentissage d'un slide en javascript</h1>
             <p>
               Ici, petit slide fait en Javascript sans objet cliquable, ni
@@ -176,6 +181,10 @@
     <footer class="footer__project">
       All right reserved &copy; Project page Abellan Antony
     </footer>
-    <script src="/apps/Js/main.js"></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-3.6.3.js"
+    ></script>
+    <script type="text/javascript" src="/apps/Js/main.js"></script>
   </body>
 </html>

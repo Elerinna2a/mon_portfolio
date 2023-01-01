@@ -173,15 +173,4 @@
       }
     }
   }
-
-  .reveal {
-    opacity: 0;
-    transform: translateY(-30px);
-  }
-
-  .reveal__visible {
-    opacity: 1;
-    transform: translateY(0);
-    transition: 1s cubic-bezier(0.5, 0, 0, 1);
-  }
 }

@@ -41,7 +41,7 @@ function changeImg() {
 window.onload = changeImg;
 
 // ========= intersection observer =========
-let ratio = 0.5;
+let ratio = 0.3;
 let options = {
   root: null,
   rootMargin: "0px",
@@ -51,11 +51,12 @@ let options = {
 const handleIntersect = (entries, observer) => {
   entries.forEach(function (entry) {
     if (entry.intersectionRatio > ratio) {
-      entry.target.classList.add("reveal__visible");
+      entry.target.classList.add("reveal-visible");
       observer.unobserve(entry.target);
     }
   });
 };
+//
 let observer = new IntersectionObserver(handleIntersect, options);
 document.querySelectorAll(".reveal").forEach(function (r) {
   observer.observe(r);

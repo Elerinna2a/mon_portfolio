@@ -141,4 +141,36 @@
       padding: 0.5rem;
     }
   }
+
+  .slide__img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+    img {
+      width: 600px;
+      height: 300px;
+      margin-bottom: 2rem;
+      border-radius: 1rem;
+      @media screen and (max-width: 1024px) {
+        width: 300px;
+        height: 200px;
+      }
+    }
+
+    .slide__link {
+      text-align: center;
+      margin-bottom: 2rem;
+    }
+    .slide__presentation {
+      width: 70%;
+      text-align: justify;
+      margin-left: auto;
+      margin-right: auto;
+      p {
+        margin-top: 1rem;
+      }
+    }
+  }
 }

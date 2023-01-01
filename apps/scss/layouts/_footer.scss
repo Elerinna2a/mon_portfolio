@@ -1,1 +1,27 @@
+.footer__project {
+  text-align: center;
+  padding: 1rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+  }
+}
 
+.footer__home {
+  text-align: center;
+  padding: 1rem;
+  @media screen and (max-width: 1024px) {
+    font-size: 16px;
+  }
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0 0;
+
+    a {
+      padding: 0.5rem;
+      color: black;
+      background-color: lightgray;
+    }
+  }
+}

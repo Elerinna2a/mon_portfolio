@@ -39,3 +39,24 @@ function changeImg() {
 }
 //  lancement du slide au chargement de la page
 window.onload = changeImg;
+
+// ========= intersection observer =========
+let ratio = 0.5;
+let options = {
+  root: null,
+  rootMargin: "0px",
+  threshold: ratio,
+};
+
+const handleIntersect = (entries, observer) => {
+  entries.forEach(function (entry) {
+    if (entry.intersectionRatio > ratio) {
+      entry.target.classList.add("reveal__visible");
+      observer.unobserve(entry.target);
+    }
+  });
+};
+let observer = new IntersectionObserver(handleIntersect, options);
+document.querySelectorAll(".reveal").forEach(function (r) {
+  observer.observe(r);
+});

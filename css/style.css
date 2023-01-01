@@ -651,6 +651,18 @@ header .nav__menu a:hover::after {
 .project__container .slide__img .slide__presentation p {
   margin-top: 1rem;
 }
+.project__container .reveal {
+  opacity: 0;
+  -webkit-transform: translateY(-30px);
+          transform: translateY(-30px);
+}
+.project__container .reveal__visible {
+  opacity: 1;
+  -webkit-transform: translateY(0);
+          transform: translateY(0);
+  -webkit-transition: 1s cubic-bezier(0.5, 0, 0, 1);
+  transition: 1s cubic-bezier(0.5, 0, 0, 1);
+}
 
 .main__cv {
   display: -webkit-box;

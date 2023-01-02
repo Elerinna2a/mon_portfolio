@@ -214,6 +214,7 @@ header .menu__container .nav__menu a:hover::after {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 1rem;
+    display: none;
   }
 }
 @media screen and (max-width: 1024px) {

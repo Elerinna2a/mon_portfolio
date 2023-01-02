@@ -38,8 +38,10 @@
 }
 
 .footer__home {
+  margin-left: 1rem;
   text-align: center;
   padding: 1rem;
+  margin-top: 1rem;
 }
 @media screen and (max-width: 1024px) {
   .footer__home {
@@ -47,21 +49,26 @@
   }
 }
 .footer__home .footer__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: none;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 1rem 0 0;
+  margin-bottom: 1rem;
 }
 .footer__home .footer__social a {
   padding: 0.5rem;
   color: black;
   background-color: lightgray;
+}
+@media screen and (max-width: 1024px) {
+  .footer__home .footer__social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 header {
@@ -112,7 +119,7 @@ header .header__right {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  gap: 1rem;
+  gap: 3rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -123,20 +130,72 @@ header .header__right img {
   border-radius: 50%;
   background-color: crimson;
 }
-header .nav__menu {
+header .header__right .open__btn__menu {
+  display: none;
+  background-color: transparent;
+  border-radius: 5px;
+  scale: 1.5;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .header__right .open__btn__menu:hover {
+  scale: 1.1;
+}
+@media screen and (max-width: 1024px) {
+  header .header__right .open__btn__menu {
+    display: block;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .header__right .open__btn__menu {
+    display: none;
+  }
+}
+header .header__right .close__btn__menu {
+  display: none;
+  background-color: transparent;
+  border-radius: 5px;
+  scale: 1.5;
+  border: none;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+header .header__right .close__btn__menu:hover {
+  scale: 1.1;
+}
+@media screen and (max-width: 1024px) {
+  header .header__right .close__btn__menu {
+    display: none;
+  }
+}
+@media screen and (min-width: 1024px) {
+  header .header__right .close__btn__menu {
+    display: none;
+  }
+}
+header .menu__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+header .menu__container .nav__menu {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   list-style: none;
   gap: 3rem;
+  -webkit-animation: down 0.5s;
+          animation: down 0.5s;
 }
-header .nav__menu a {
+header .menu__container .nav__menu a {
   text-decoration: none;
   color: black;
   font-size: 18px;
   position: relative;
 }
-header .nav__menu a::after {
+header .menu__container .nav__menu a::after {
   content: "";
   width: 0%;
   height: 3px;
@@ -147,11 +206,11 @@ header .nav__menu a::after {
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
-header .nav__menu a:hover::after {
+header .menu__container .nav__menu a:hover::after {
   width: 100%;
 }
 @media screen and (max-width: 1024px) {
-  header .nav__menu {
+  header .menu__container .nav__menu {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
     gap: 1rem;
@@ -166,6 +225,27 @@ header .nav__menu a:hover::after {
   }
 }
 
+@-webkit-keyframes down {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
+
+@keyframes down {
+  to {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  from {
+    -webkit-transform: translateY(-10px);
+            transform: translateY(-10px);
+  }
+}
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -283,11 +363,13 @@ header .nav__menu a:hover::after {
 }
 .home__content .home__social a {
   padding: 1rem;
+  border: 1px solid black;
   background-color: white;
   font-size: 1.5rem;
   color: black;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
+  margin-bottom: 0.5rem;
 }
 .home__content .home__social a:hover {
   -webkit-transform: scale(1.2);
@@ -337,8 +419,7 @@ header .nav__menu a:hover::after {
 .about__content .about__infos {
   display: grid;
   width: 70%;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 1rem auto;
   padding: 1rem;
   gap: 5rem;
   grid-template-columns: 2fr 1fr;

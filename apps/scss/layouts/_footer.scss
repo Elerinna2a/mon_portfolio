@@ -7,21 +7,26 @@
 }
 
 .footer__home {
+  margin-left: 1rem;
   text-align: center;
   padding: 1rem;
+  margin-top: 1rem;
   @media screen and (max-width: 1024px) {
     font-size: 16px;
   }
   .footer__social {
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
-    margin: 1rem 0 0;
+    margin-bottom: 1rem;
 
     a {
       padding: 0.5rem;
       color: black;
       background-color: lightgray;
+    }
+    @media screen and (max-width: 1024px) {
+      display: flex;
     }
   }
 }

@@ -44,7 +44,7 @@ header {
 
   .header__right {
     display: flex;
-    gap: 1rem;
+    gap: 3rem;
     align-items: center;
     cursor: pointer;
     font-size: 25px;
@@ -53,40 +53,92 @@ header {
       border-radius: 50%;
       background-color: crimson;
     }
-  }
+    .open__btn__menu {
+      display: none;
+      background-color: transparent;
+      border-radius: 5px;
+      scale: 1.5;
+      border: none;
+      transition: 0.3s;
 
-  .nav__menu {
-    display: flex;
-    list-style: none;
-    gap: 3rem;
-
-    a {
-      text-decoration: none;
-      color: black;
-      font-size: 18px;
-      position: relative;
-
-      &::after {
-        content: "";
-        width: 0%;
-        height: 3px;
-        background: crimson;
-        position: absolute;
-        left: 0;
-        bottom: -6px;
-        transition: 0.5s;
+      &:hover {
+        scale: 1.1;
       }
 
-      &:hover::after {
-        width: 100%;
+      @media screen and (max-width: 1024px) {
+        display: block;
+      }
+      @media screen and (min-width: 1024px) {
+        display: none;
       }
     }
-    @media screen and (max-width: 1024px) {
-      flex-wrap: wrap;
-      gap: 1rem;
+    .close__btn__menu {
+      display: none;
+      background-color: transparent;
+      border-radius: 5px;
+      scale: 1.5;
+      border: none;
+      transition: 0.3s;
+
+      &:hover {
+        scale: 1.1;
+      }
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
+      @media screen and (min-width: 1024px) {
+        display: none;
+      }
+    }
+  }
+
+  .menu__container {
+    display: flex;
+    gap: 1rem;
+
+    .nav__menu {
+      display: flex;
+      list-style: none;
+      gap: 3rem;
+      animation: down 0.5s;
+
+      a {
+        text-decoration: none;
+        color: black;
+        font-size: 18px;
+        position: relative;
+
+        &::after {
+          content: "";
+          width: 0%;
+          height: 3px;
+          background: crimson;
+          position: absolute;
+          left: 0;
+          bottom: -6px;
+          transition: 0.5s;
+        }
+
+        &:hover::after {
+          width: 100%;
+        }
+      }
+      @media screen and (max-width: 1024px) {
+        flex-wrap: wrap;
+        gap: 1rem;
+      }
     }
   }
   @media screen and (max-width: 1024px) {
     flex-direction: column;
+  }
+}
+
+@keyframes down {
+  to {
+    transform: translateY(0);
+  }
+  from {
+    transform: translateY(-10px);
   }
 }

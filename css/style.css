@@ -179,6 +179,8 @@ header .menu__container {
   display: -ms-flexbox;
   display: flex;
   gap: 1rem;
+  -webkit-animation: down 0.5s;
+          animation: down 0.5s;
 }
 header .menu__container .nav__menu {
   display: -webkit-box;
@@ -291,6 +293,7 @@ header .menu__container .nav__menu a:hover::after {
   min-height: 59.9rem;
   max-height: 80rem;
   gap: 2rem;
+  position: relative;
 }
 .home__content h1 {
   font-size: 50px;
@@ -364,22 +367,31 @@ header .menu__container .nav__menu a:hover::after {
 }
 .home__content .home__social a {
   padding: 1rem;
-  border: 1px solid black;
   background-color: white;
   font-size: 1.5rem;
   color: black;
   -webkit-transition: 0.5s ease-out;
   transition: 0.5s ease-out;
-  margin-bottom: 0.5rem;
 }
 .home__content .home__social a:hover {
   -webkit-transform: scale(1.2);
           transform: scale(1.2);
+  color: white;
+  background-color: crimson;
 }
 @media screen and (max-width: 1080px) {
   .home__content .home__social {
     display: none;
   }
+}
+.home__content .arrow__down {
+  position: absolute;
+  bottom: 0;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+.home__content .arrow__down p {
+  margin-bottom: 1rem;
 }
 @media screen and (max-width: 1080px) {
   .home__content {
@@ -811,6 +823,9 @@ header .menu__container .nav__menu a:hover::after {
   border-radius: 5px;
   -webkit-box-shadow: 1px 1px 5px;
           box-shadow: 1px 1px 5px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 .main__cv .content__cv .top__cv {
   text-align: center;
@@ -822,6 +837,9 @@ header .menu__container .nav__menu a:hover::after {
   display: flex;
   gap: 2rem;
   padding: 1rem;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
 }
 @media screen and (max-width: 1024px) {
   .main__cv .content__cv .mid__cv {
@@ -893,12 +911,6 @@ header .menu__container .nav__menu a:hover::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   width: 60%;
 }
 @media screen and (max-width: 1024px) {

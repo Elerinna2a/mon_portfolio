@@ -38,9 +38,9 @@
     <title>Portfolio Abellan Antony</title>
   </head>
   <body>
-    <header>
+    <header class="reveal">
       <!--  ======= logo + title ======= -->
-      <div class="header__right">
+      <div class="header__right reveal-1">
         <div class="logo__header">
           <img
             src="/img/me.png"
@@ -49,7 +49,7 @@
             height="50px"
           />
         </div>
-        <div class="home">
+        <div class="home reveal-2">
           <a href="/index.html">
             <span class="title__header">
               <p><strong>A</strong>bellan <strong>A</strong>ntony.</p>
@@ -65,45 +65,32 @@
           </button>
         </div>
       </div>
-      <div class="menu__container">
+      <div class="menu__container reveal-3">
         <ul class="nav__menu">
           <li><a href="#about">À propos</a></li>
           <li><a href="/pages/project.html">Mes projets</a></li>
           <li><a href="mailto:abellan.antony@gmail.com">Contact</a></li>
         </ul>
       </div>
-
       <!-- ======= menu header ======= -->
     </header>
-
     <!--  ======== home content ========= -->
-    <section class="home__content">
-      <div class="home__text">
+    <section class="home__content reveal">
+      <div class="home__text reveal-1">
         <h1>Salut, Je m’appelle Abellan Antony</h1>
-        <div class="home__infos">
-          Actuellement en formation pour devenir développeur Full Stack chez
-          Aflokkat, ici regroupe toutes mes infos & projets personnels
+        <div class="home__infos reveal-2">
+          Actuellement en formation pour devenir développeur d'application web &
+          mobile chez Aflokkat, ici regroupe toutes mes infos & projets
+          personnels
         </div>
-        <div class="home__cv">
+        <div class="home__cv reveal-3">
           <a href="/pages/cv.html">Mon CV</a>
-          <!-- <a href="/pages/project.html">Mes projets</a> -->
+          <a href="/pages/project.html">Mes projets</a>
         </div>
       </div>
-      <div class="home__social">
-        <a
-          href="https://www.facebook.com/antony.abellan"
-          id="social"
-          target="_blank"
-          ><i class="bx bxl-facebook"></i
-        ></a>
+      <div class="home__social reveal-4">
         <a href="https://twitter.com/AbellanAntony" id="social" target="_blank"
           ><i class="bx bxl-twitter"></i
-        ></a>
-        <a
-          href="https://www.instagram.com/anto2a4/?hl=fr"
-          id="social"
-          target="_blank"
-          ><i class="bx bxl-instagram"></i
         ></a>
         <a
           href="https://www.linkedin.com/in/antony-abellan-a758b024a/"
@@ -118,11 +105,15 @@
           ><i class="bx bxl-github"></i
         ></a>
       </div>
+      <span class="material-symbols-outlined arrow__down">
+        <p>Scroll</p>
+        arrow_downward
+      </span>
     </section>
 
     <!-- ======= about content ========== -->
-    <section class="about__content" id="about">
-      <div class="about__title">
+    <section class="about__content reveal" id="about">
+      <div class="about__title reveal">
         <h1><span>À</span> propos de moi</h1>
         <p>
           Ici, tu trouveras toutes les informations sur moi, ce que je fais
@@ -130,13 +121,13 @@
         </p>
         <p class="p__bar"></p>
       </div>
-      <div class="about__infos">
+      <div class="about__infos reveal-2">
         <div class="about__me">
           <h3>Apprends à me connaitre!</h3>
           <p>
             Actuellement, je suis en formation chez Aflokkat, afin de devenir
-            développeur <strong>Full Stack</strong>. J'apprends de jours en
-            jours le métier de développeur, que ce soit en cours ou en étant
+            développeur d'application web & mobile. J'apprends de jours en jours
+            le métier de développeur, que ce soit en cours ou en étant
             autodidacte.
           </p>
           <p>
@@ -146,23 +137,23 @@
           </p>
           Je suis ouvert à toute proposition de travail où je peux contribuer,
           apprendre & évoluer. Si vous avez des opportunités à me présenter, qui
-          coïncide avec mes compétences, n'hésitez pas et contactez moi!
+          coïncident avec mes compétences, n'hésitez pas et contactez moi!
           <div id="about__contact">
             <a href="mailto:abellan.antony@gmail.com">Contact</a>
           </div>
         </div>
-        <div class="about__skill">
+        <div class="about__skill reveal-3">
           <h3>Mes compétences</h3>
           <div class="skills">
             <div class="skill">HTML</div>
             <div class="skill">CSS</div>
-            <div class="skill">JAVASCRIPT</div>
+            <div class="skill">BASIQUE JAVASCRIPT</div>
             <div class="skill">SASS</div>
             <div class="skill">GIT</div>
             <div class="skill">GITHUB</div>
             <div class="skill">BASIQUE SQL</div>
-            <div class="skill">PYTHON</div>
-            <div class="skill">JAVA</div>
+            <div class="skill">BASIQUE PYTHON</div>
+            <div class="skill">BASIQUE JAVA</div>
           </div>
         </div>
       </div>
@@ -205,7 +196,7 @@
     </section>
 
     <!-- ===============  script ============= -->
-    <script src="/apps/Js/main.js"></script>
-    <script src="/apps/Js/menu.js"></script>
+    <script type="text/javascript" src="/apps/Js/main.js"></script>
+    <script type="text/javascript" src="/apps/Js/menu.js"></script>
   </body>
 </html>

@@ -1,17 +1,21 @@
 const menu = document.querySelector(".nav__menu");
 const openMenu = document.querySelector(".open__btn__menu");
 const closeMenu = document.querySelector(".close__btn__menu");
+const about = document.getElementById("about");
 
 openMenu.addEventListener("click", () => {
-  menu.style.display = "flex";
+  menu.style.left = "0px";
   openMenu.style.display = "none";
   closeMenu.style.display = "block";
 });
 
 const closeTheMenu = () => {
-  menu.style.display = "none";
+  menu.style.left = "-1024px";
   openMenu.style.display = "block";
   closeMenu.style.display = "none";
+  if (about) {
+    window.location.href = "#about";
+  }
 };
 
 closeMenu.addEventListener("click", closeTheMenu);

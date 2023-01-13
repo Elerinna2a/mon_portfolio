@@ -1,19 +1,18 @@
 .project__container {
-  display: flex;
+  display: grid;
   flex-direction: column;
   img {
     width: 60%;
     max-width: 25rem;
   }
   h1 {
-    color: crimson;
     text-align: center;
   }
   a {
     text-decoration: none;
     padding: 1rem;
-    color: black;
-    background-color: crimson;
+    color: white;
+    background: rgb(6, 119, 144, 0.8);
     border-radius: 5px;
     text-align: center;
   }
@@ -22,17 +21,18 @@
     content: "";
     width: 10rem;
     height: 2px;
-    background-color: crimson;
+    background: rgb(6, 119, 144, 0.8);
     margin: 2rem auto;
   }
 
   .project__presentation {
-    background: url(/img/common-bg.svg);
+    background: rgb(6, 119, 144, 0.8);
     display: flex;
     flex-direction: column;
     gap: 1rem;
     align-items: center;
     padding-bottom: 1rem;
+    color: white;
 
     .wrap__img {
       display: flex;
@@ -83,6 +83,7 @@
       text-align: justify;
       h1 {
         text-align: center;
+        color: rgb(6, 119, 144, 0.8);
       }
       .rpg__p {
         display: flex;
@@ -97,7 +98,8 @@
   }
 
   .first__portfolio {
-    background: url(/img/common-bg.svg);
+    background: rgb(6, 119, 144, 0.8);
+    color: white;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -147,6 +149,11 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
+
+    h1 {
+      text-align: center;
+      color: rgb(6, 119, 144, 0.8);
+    }
 
     img {
       width: 600px;

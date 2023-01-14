@@ -169,11 +169,11 @@ header .menu__container {
   display: flex;
   gap: 1rem;
   -webkit-animation: down 0.5s;
-          animation: down 0.5s;
+  animation: down 0.5s;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
 }
 header .menu__container .close__btn__menu {
   display: none;
@@ -185,11 +185,9 @@ header .menu__container .close__btn__menu {
   transition: 0.3s;
 }
 header .menu__container .close__btn__menu:hover {
-header .menu__container .close__btn__menu:hover {
   scale: 1.1;
 }
 @media screen and (max-width: 1024px) {
-  header .menu__container .close__btn__menu {
   header .menu__container .close__btn__menu {
     display: none;
     font-size: 42px;
@@ -197,7 +195,6 @@ header .menu__container .close__btn__menu:hover {
   }
 }
 @media screen and (min-width: 1024px) {
-  header .menu__container .close__btn__menu {
   header .menu__container .close__btn__menu {
     display: none;
   }

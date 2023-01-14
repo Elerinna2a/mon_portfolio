@@ -14,22 +14,30 @@
     margin: 1rem;
     transition: 0.5s ease;
     display: flex;
+
     a {
-      color: black;
+      color: white;
       text-decoration: none;
-      background-color: crimson;
+      background: rgb(6, 119, 144, 0.8);
       padding: 1rem;
       box-shadow: 1px 1px 5px;
       text-align: center;
+      @media screen and (max-width: 1024px) {
+        font-size: 14px;
+        width: 8rem;
+      }
     }
     &:hover {
       scale: 1.1;
+      @media screen and (max-width: 1024px) {
+        scale: 1;
+      }
     }
   }
 
   .content__cv {
     display: flex;
-    background: url(/img/common-bg.svg);
+    background: rgb(6, 119, 144, 0.1);
     width: 90vw;
     flex-direction: column;
     justify-content: center;
@@ -53,7 +61,7 @@
       }
 
       .content__left {
-        background-color: rgb(0, 0, 0, 0.7);
+        background: rgb(6, 119, 144, 0.8);
         color: white;
         border-radius: 5px;
         border: 2px solid grey;
@@ -86,7 +94,7 @@
           div {
             margin: 2rem 0;
             h3 {
-              color: crimson;
+              color: white;
               margin: 1rem 0;
             }
           }
@@ -94,7 +102,7 @@
       }
 
       .content__right {
-        background-color: transparent;
+        background-color: white;
         border-radius: 5px;
         border: 2px solid grey;
         padding: 10px;
@@ -113,7 +121,7 @@
 
         h3,
         h2 {
-          color: crimson;
+          color: rgb(6, 119, 144, 0.8);
           margin: 2rem 0;
         }
         p {

@@ -1,6 +1,7 @@
 const menu = document.querySelector(".nav__menu");
 const openMenu = document.querySelector(".open__btn__menu");
 const closeMenu = document.querySelector(".close__btn__menu");
+const about = document.getElementById("about");
 
 // openMenu.addEventListener("click", () => {
 //   menu.style.left = "0px";

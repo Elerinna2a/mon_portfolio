@@ -1,6 +1,6 @@
 //  =========== home content ===============
 .home__content {
-  background: url(/img/common-bg.svg);
+  background: rgb(6, 119, 144, 0.8);
   background-position: center;
   display: flex;
   flex-direction: row-reverse;
@@ -15,6 +15,7 @@
     font-size: 50px;
     padding: 2rem;
     text-align: center;
+    color: white;
     @media screen and (max-width: 1080px) {
       font-size: 35px;
     }
@@ -29,6 +30,7 @@
     display: flex;
     text-align: center;
     margin: 0 10rem;
+    color: white;
     @media screen and (max-width: 1080px) {
       margin: 0 2rem;
     }
@@ -43,11 +45,12 @@
 
     a {
       padding: 1rem;
-      background-color: rgb(220, 20, 60);
-      color: black;
+      background: rgb(6, 119, 144, 0.8);
+      color: white;
       font-weight: bold;
       text-decoration: none;
-      box-shadow: 2px 2px 20px;
+      border-radius: 5px;
+      box-shadow: 2px 2px 20px rgb(6, 119, 144, 0.8);
       transition: 0.5s ease-out;
 
       &:first-child {
@@ -55,7 +58,9 @@
       }
 
       &:hover {
-        scale: 1.1;
+        transform: scale(1.2);
+        color: rgb(6, 119, 144, 0.8);
+        background: white;
       }
     }
     @media screen and (max-width: 1024px) {
@@ -81,12 +86,31 @@
       &:hover {
         transform: scale(1.2);
         color: white;
-        background-color: crimson;
+        background: rgb(6, 119, 144, 0.8);
       }
     }
 
     @media screen and (max-width: 1080px) {
       display: none;
+    }
+  }
+  .wave-content {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+
+    svg {
+      position: relative;
+      display: block;
+      width: calc(100% + 5px);
+      height: 224px;
+    }
+    .shape-fill {
+      fill: #ffffff;
     }
   }
 }
@@ -107,11 +131,11 @@
     position: relative;
 
     span {
-      color: crimson;
+      color: rgb(6, 119, 144, 0.8);
     }
 
     .p__bar {
-      border-bottom: 3px solid crimson;
+      color: rgb(6, 119, 144, 0.8);
       width: 5rem;
       display: flex;
       position: relative;
@@ -143,7 +167,7 @@
       }
       a {
         text-decoration: none;
-        color: crimson;
+        color: rgb(6, 119, 144, 0.8);
       }
     }
     #about__contact {
@@ -152,17 +176,22 @@
       margin-left: auto;
       margin-right: auto;
       margin-top: 2rem;
-      background-color: rgb(220, 20, 60);
+      background: rgb(6, 119, 144, 0.8);
       padding: 1rem;
       width: 10rem;
       box-shadow: 2px 2px 20px;
       transition: 0.5s ease-out;
+      border-radius: 5px;
       a {
-        color: black;
+        color: white;
         font-weight: bold;
       }
       &:hover {
         scale: (1.1);
+        background: white;
+        a {
+          color: rgb(6, 119, 144, 0.8);
+        }
       }
     }
   }

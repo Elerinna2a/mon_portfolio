@@ -411,7 +411,6 @@ header .menu__container .nav__menu a:hover::after {
 
 .about__content {
   width: 100%;
-  height: 100vh;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -474,7 +473,7 @@ header .menu__container .nav__menu a:hover::after {
   text-decoration: none;
   color: rgba(6, 119, 144, 0.8);
 }
-.about__content .about__infos #about__contact {
+.about__content .about__infos .about__me #about__contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -493,38 +492,37 @@ header .menu__container .nav__menu a:hover::after {
   transition: 0.5s ease-out;
   border-radius: 5px;
 }
-.about__content .about__infos #about__contact a {
+.about__content .about__infos .about__me #about__contact a {
   color: white;
   font-weight: bold;
 }
-.about__content .about__infos #about__contact:hover {
+.about__content .about__infos .about__me #about__contact:hover {
   scale: 1.1;
   background: white;
 }
-.about__content .about__infos #about__contact:hover a {
+.about__content .about__infos .about__me #about__contact:hover a {
   color: rgba(6, 119, 144, 0.8);
 }
-.about__content .about__skill {
+.about__content .about__infos .about__skill {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding: 1rem;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
 }
-.about__content .about__skill .skills {
+.about__content .about__infos .about__skill .skills {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
 }
-.about__content .about__skill .skill {
+.about__content .about__infos .about__skill .skill {
   background-color: lightgray;
   width: auto;
   height: 3rem;
@@ -549,6 +547,10 @@ header .menu__container .nav__menu a:hover::after {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+}
+
+.menuProject {
+  display: none;
 }
 
 .project__container {

@@ -99,7 +99,6 @@
 
 .about__content {
   width: 100%;
-  height: 100vh;
   display: flex;
   flex-direction: column;
   padding: 12rem 0;
@@ -149,55 +148,57 @@
         text-decoration: none;
         color: rgb(6, 119, 144, 0.8);
       }
-    }
-    #about__contact {
-      display: flex;
-      justify-content: center;
-      margin-left: auto;
-      margin-right: auto;
-      margin-top: 2rem;
-      background: rgb(6, 119, 144, 0.8);
-      padding: 1rem;
-      width: 10rem;
-      box-shadow: 2px 2px 20px;
-      transition: 0.5s ease-out;
-      border-radius: 5px;
-      a {
-        color: white;
-        font-weight: bold;
-      }
-      &:hover {
-        scale: (1.1);
-        background: white;
+
+      #about__contact {
+        display: flex;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 2rem;
+        background: rgb(6, 119, 144, 0.8);
+        padding: 1rem;
+        width: 10rem;
+        box-shadow: 2px 2px 20px;
+        transition: 0.5s ease-out;
+        border-radius: 5px;
         a {
-          color: rgb(6, 119, 144, 0.8);
+          color: white;
+          font-weight: bold;
+        }
+        &:hover {
+          scale: (1.1);
+          background: white;
+          a {
+            color: rgb(6, 119, 144, 0.8);
+          }
         }
       }
     }
-  }
-  .about__skill {
-    display: flex;
-    align-items: center;
-    padding: 1rem;
-    flex-direction: column;
 
-    .skills {
+    .about__skill {
       display: flex;
-      flex-wrap: wrap;
-    }
-
-    .skill {
-      background-color: lightgray;
-      width: auto;
-      height: 3rem;
-      padding: 1rem;
-      text-align: center;
-      display: flex;
-      margin: 10px;
       align-items: center;
-      border-radius: 0.3rem;
-      box-shadow: 1px 1px 5px;
-      color: rgb(104, 103, 103);
+      // padding: 1rem;
+      flex-direction: column;
+
+      .skills {
+        display: flex;
+        flex-wrap: wrap;
+      }
+
+      .skill {
+        background-color: lightgray;
+        width: auto;
+        height: 3rem;
+        padding: 1rem;
+        text-align: center;
+        display: flex;
+        margin: 10px;
+        align-items: center;
+        border-radius: 0.3rem;
+        box-shadow: 1px 1px 5px;
+        color: rgb(104, 103, 103);
+      }
     }
   }
 

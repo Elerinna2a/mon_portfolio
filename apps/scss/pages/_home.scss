@@ -9,7 +9,6 @@
   min-height: 59.9rem;
   max-height: 80rem;
   gap: 2rem;
-  position: relative;
 
   h1 {
     font-size: 50px;
@@ -92,25 +91,6 @@
 
     @media screen and (max-width: 1080px) {
       display: none;
-    }
-  }
-  .wave-content {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg);
-
-    svg {
-      position: relative;
-      display: block;
-      width: calc(100% + 5px);
-      height: 224px;
-    }
-    .shape-fill {
-      fill: #ffffff;
     }
   }
 }

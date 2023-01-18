@@ -3,39 +3,51 @@
 }
 
 .project__container {
-  display: grid;
-  flex-direction: column;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  font-size: 16px;
+
   img {
-    width: 60%;
-    max-width: 25rem;
+    width: 300px;
+    height: 150px;
+    border-radius: 5px;
   }
+
   h1 {
     text-align: center;
   }
+
   a {
     text-decoration: none;
-    padding: 1rem;
+    padding: 0.5rem;
     color: white;
     background: rgb(6, 119, 144, 0.8);
     border-radius: 5px;
     text-align: center;
   }
 
-  .bar {
-    content: "";
-    width: 10rem;
-    height: 2px;
-    background: rgb(6, 119, 144, 0.8);
-    margin: 2rem auto;
+  #project {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+    padding: 2rem 0;
+    width: 40%;
+    border: 1px solid rgb(6, 119, 144, 0.8);
+    border-radius: 5px;
+
+    @media screen and (max-width: 1024px) {
+      width: 90%;
+      margin: 0 auto 1rem auto;
+    }
   }
 
   .project__presentation {
     background: rgb(6, 119, 144, 0.8);
-    display: flex;
-    flex-direction: column;
     gap: 1rem;
     align-items: center;
-    padding-bottom: 1rem;
     color: white;
 
     .wrap__img {
@@ -44,13 +56,6 @@
       gap: 1rem;
       flex-wrap: wrap;
       justify-content: center;
-      margin: 2rem;
-
-      img {
-        width: 40%;
-        border-radius: 1rem;
-        height: 15rem;
-      }
       @media screen and (max-width: 1024px) {
         img {
           height: 8rem;
@@ -67,14 +72,7 @@
   }
 
   .rpg__game {
-    display: flex;
-    flex-direction: column;
     gap: 2rem;
-
-    img {
-      width: 40%;
-      border-radius: 1rem;
-    }
 
     .rpg__img {
       display: flex;
@@ -93,7 +91,6 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        margin: 1rem;
         li {
           margin-left: 2rem;
         }
@@ -104,19 +101,8 @@
   .first__portfolio {
     background: rgb(6, 119, 144, 0.8);
     color: white;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
     gap: 2rem;
-    padding-top: 1rem;
-
-    img {
-      width: 40%;
-      border-radius: 1rem;
-      margin-bottom: 1rem;
-      min-width: 15rem;
-      max-width: 25rem;
-    }
+    justify-content: center;
 
     .top__portfolio {
       display: flex;
@@ -131,10 +117,6 @@
       flex-direction: column;
       gap: 1rem;
       max-width: 70%;
-      margin-bottom: 5rem;
-      h1 {
-        margin-bottom: 1rem;
-      }
     }
   }
 
@@ -149,36 +131,22 @@
   }
 
   .slide__img {
-    display: flex;
     align-items: center;
     justify-content: center;
-    flex-direction: column;
 
     h1 {
       text-align: center;
       color: rgb(6, 119, 144, 0.8);
     }
 
-    img {
-      width: 600px;
-      height: 300px;
-      margin-bottom: 2rem;
-      border-radius: 1rem;
-      @media screen and (max-width: 1024px) {
-        width: 300px;
-        height: 200px;
-      }
-    }
-
     .slide__link {
       text-align: center;
-      margin-bottom: 2rem;
+      margin: 1rem 0;
     }
     .slide__presentation {
       width: 70%;
       text-align: justify;
-      margin-left: auto;
-      margin-right: auto;
+      margin: 0 auto;
       p {
         margin-top: 1rem;
       }

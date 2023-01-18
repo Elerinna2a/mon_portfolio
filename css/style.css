@@ -554,36 +554,33 @@ header .menu__container .nav__menu a:hover::after {
 }
 
 .project__container {
-  display: grid;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  font-size: 16px;
 }
 .project__container img {
-  width: 60%;
-  max-width: 25rem;
+  width: 300px;
+  height: 150px;
+  border-radius: 5px;
 }
 .project__container h1 {
   text-align: center;
 }
 .project__container a {
   text-decoration: none;
-  padding: 1rem;
+  padding: 0.5rem;
   color: white;
   background: rgba(6, 119, 144, 0.8);
   border-radius: 5px;
   text-align: center;
 }
-.project__container .bar {
-  content: "";
-  width: 10rem;
-  height: 2px;
-  background: rgba(6, 119, 144, 0.8);
-  margin: 2rem auto;
-}
-.project__container .project__presentation {
-  background: rgba(6, 119, 144, 0.8);
+.project__container #project {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -591,11 +588,30 @@ header .menu__container .nav__menu a:hover::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 2rem;
+  padding: 2rem 0;
+  width: 40%;
+  border: 1px solid rgba(6, 119, 144, 0.8);
+  border-radius: 5px;
+}
+@media screen and (max-width: 1024px) {
+  .project__container #project {
+    width: 90%;
+    margin: 0 auto 1rem auto;
+  }
+}
+.project__container .project__presentation {
+  background: rgba(6, 119, 144, 0.8);
   gap: 1rem;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  padding-bottom: 1rem;
   color: white;
 }
 .project__container .project__presentation .wrap__img {
@@ -611,12 +627,6 @@ header .menu__container .nav__menu a:hover::after {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 2rem;
-}
-.project__container .project__presentation .wrap__img img {
-  width: 40%;
-  border-radius: 1rem;
-  height: 15rem;
 }
 @media screen and (max-width: 1024px) {
   .project__container .project__presentation .wrap__img img {
@@ -636,18 +646,7 @@ header .menu__container .nav__menu a:hover::after {
   max-width: 70%;
 }
 .project__container .rpg__game {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   gap: 2rem;
-}
-.project__container .rpg__game img {
-  width: 40%;
-  border-radius: 1rem;
 }
 .project__container .rpg__game .rpg__img {
   display: -webkit-box;
@@ -683,7 +682,6 @@ header .menu__container .nav__menu a:hover::after {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  margin: 1rem;
 }
 .project__container .rpg__game .rpg__presentation .rpg__p li {
   margin-left: 2rem;
@@ -691,25 +689,10 @@ header .menu__container .nav__menu a:hover::after {
 .project__container .first__portfolio {
   background: rgba(6, 119, 144, 0.8);
   color: white;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
   gap: 2rem;
-  padding-top: 1rem;
-}
-.project__container .first__portfolio img {
-  width: 40%;
-  border-radius: 1rem;
-  margin-bottom: 1rem;
-  min-width: 15rem;
-  max-width: 25rem;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 .project__container .first__portfolio .top__portfolio {
   display: -webkit-box;
@@ -735,10 +718,6 @@ header .menu__container .nav__menu a:hover::after {
           flex-direction: column;
   gap: 1rem;
   max-width: 70%;
-  margin-bottom: 5rem;
-}
-.project__container .first__portfolio .bot__portfolio h1 {
-  margin-bottom: 1rem;
 }
 @media screen and (max-width: 1024px) {
   .project__container {
@@ -752,45 +731,25 @@ header .menu__container .nav__menu a:hover::after {
   }
 }
 .project__container .slide__img {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
 }
 .project__container .slide__img h1 {
   text-align: center;
   color: rgba(6, 119, 144, 0.8);
 }
-.project__container .slide__img img {
-  width: 600px;
-  height: 300px;
-  margin-bottom: 2rem;
-  border-radius: 1rem;
-}
-@media screen and (max-width: 1024px) {
-  .project__container .slide__img img {
-    width: 300px;
-    height: 200px;
-  }
-}
 .project__container .slide__img .slide__link {
   text-align: center;
-  margin-bottom: 2rem;
+  margin: 1rem 0;
 }
 .project__container .slide__img .slide__presentation {
   width: 70%;
   text-align: justify;
-  margin-left: auto;
-  margin-right: auto;
+  margin: 0 auto;
 }
 .project__container .slide__img .slide__presentation p {
   margin-top: 1rem;

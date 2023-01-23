@@ -35,7 +35,6 @@
     margin-bottom: 2rem;
     padding: 2rem 0;
     width: 40%;
-    border: 1px solid rgb(6, 119, 144, 0.8);
     border-radius: 5px;
 
     @media screen and (max-width: 1024px) {
@@ -99,8 +98,6 @@
   }
 
   .first__portfolio {
-    background: rgb(6, 119, 144, 0.8);
-    color: white;
     gap: 2rem;
     justify-content: center;
 
@@ -131,12 +128,13 @@
   }
 
   .slide__img {
+    background: rgb(6, 119, 144, 0.8);
+    color: white;
     align-items: center;
     justify-content: center;
 
     h1 {
       text-align: center;
-      color: rgb(6, 119, 144, 0.8);
     }
 
     .slide__link {

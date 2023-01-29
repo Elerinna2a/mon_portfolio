@@ -2,179 +2,239 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link rel="shortcut icon" href="/img/me.png" type="image/x-icon" />
+    <link rel="stylesheet" href="style.css" />
+    <title>My Website</title>
     <link
       href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
       rel="stylesheet"
     />
-    <!--  ========= jetbrains family ========== -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@300;400;500;600;700&display=swap"
-      rel="stylesheet"
-    />
-    <!--  ========== google icons =========== -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
-    />
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"
-    />
-    <link
-      href="https://fonts.googleapis.com/icon?family=Material+Icons"
-      rel="stylesheet"
-    />
-    <!--  ========== icons scoot ========== -->
-    <link
-      rel="stylesheet"
-      href="https://unicons.iconscout.com/release/v4.0.0/css/line.css"
-    />
-    <title>Portfolio Abellan Antony</title>
   </head>
-  <body>
-    <header class="reveal">
-      <!--  ======= logo + title ======= -->
-      <div class="header__right reveal-1">
-        <div class="logo__header">
-          <img
-            src="/img/me.png"
-            alt="Photo header"
-            width="50px"
-            height="50px"
-          />
-        </div>
-        <div class="home reveal-2">
-          <a href="/index.html">
-            <span class="title__header">
-              <p><strong>A</strong>bellan <strong>A</strong>ntony.</p>
-            </span>
-          </a>
-        </div>
-        <button class="open__btn__menu">
-          <i><span class="material-symbols-outlined"> menu </span></i>
-        </button>
-      </div>
-      <div class="menu__container">
-        <ul class="nav__menu reveal-3">
-          <button class="close__btn__menu">
-            <i><span class="material-symbols-outlined"> close </span></i>
-          </button>
-          <li><a href="#about" id="aboutMenu">À propos</a></li>
-          <li><a href="/pages/project.html">Mes projets</a></li>
-          <li><a href="mailto:abellan.antony@gmail.com">Contact</a></li>
-        </ul>
-      </div>
-      <!-- ======= menu header ======= -->
-    </header>
-    <!--  ======== home content ========= -->
-    <section class="home__content reveal">
-      <div class="home__text reveal-1">
-        <h1>Salut, Je m’appelle Abellan Antony</h1>
-        <div class="home__infos reveal-2">
-          Actuellement en formation pour devenir développeur d'application web &
-          mobile chez Aflokkat, ici regroupe toutes mes infos & projets
-          personnels
-        </div>
-        <div class="home__cv reveal-3">
-          <a href="/pages/cv.html">Mon CV</a>
-          <a href="/pages/project.html">Mes projets</a>
-        </div>
-      </div>
-      <div class="home__social reveal-4">
-        <a href="https://twitter.com/AbellanAntony" id="social" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/antony-abellan-a758b024a/"
-          id="social"
-          target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          href="https://github.com/Elerinna2a?tab=repositories"
-          id="social"
-          target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
-      </div>
-    </section>
 
-    <!-- ======= about content ========== -->
-    <section class="about__content reveal" id="about">
-      <div class="about__title reveal">
-        <h1><span>À</span> propos de moi</h1>
-        <p>
-          Ici, tu trouveras toutes les informations sur moi, ce que je fais
-          ainsi que mes compétences en matière de programmation.
-        </p>
-        <p class="p__bar"></p>
-      </div>
-      <div class="about__infos reveal-2">
-        <div class="about__me">
-          <h3>Apprends à me connaitre!</h3>
-          <p>
-            Actuellement, je suis en formation chez Aflokkat, afin de devenir
-            développeur d'application web & mobile. J'apprends de jours en jours
-            le métier de développeur, que ce soit en cours ou en étant
-            autodidacte.
-          </p>
-          <p>
-            Dans la section <strong><a href="#">projets</a></strong
-            >, vous trouverez mes projets, que ce soit ceux perso ou ceux fait
-            en cours.
-          </p>
-          Je suis ouvert à toute proposition de travail où je peux contribuer,
-          apprendre & évoluer. Si vous avez des opportunités à me présenter, qui
-          coïncident avec mes compétences, n'hésitez pas et contactez moi!
-          <div id="about__contact">
-            <a href="mailto:abellan.antony@gmail.com">Contact</a>
+  <body>
+    <!-- Header -->
+    <section id="header">
+      <div class="header container">
+        <div class="nav-bar">
+          <div class="brand">
+            <a href="#hero">
+              <h1><span>A</span>bellan <span>A</span>ntony</h1>
+            </a>
           </div>
-        </div>
-        <div class="about__skill reveal-3">
-          <h3>Mes compétences</h3>
-          <div class="skills">
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">JAVASCRIPT</div>
-            <div class="skill">SASS</div>
-            <div class="skill">GIT</div>
-            <div class="skill">GITHUB</div>
-            <div class="skill">SQL</div>
-            <div class="skill">PYTHON</div>
-            <div class="skill">JAVA</div>
+          <div class="nav-list">
+            <div class="hamburger">
+              <div class="bar"></div>
+            </div>
+            <ul>
+              <li><a href="#hero" data-after="Home">Home</a></li>
+              <li><a href="#about" data-after="About">À propos</a></li>
+              <li><a href="#projects" data-after="Projects">Projets</a></li>
+            </ul>
           </div>
         </div>
       </div>
     </section>
-    <footer class="footer__home">
-      <hr />
-      <div class="footer__social">
-        <a href="https://twitter.com/AbellanAntony" id="social" target="_blank"
-          ><i class="bx bxl-twitter"></i
-        ></a>
-        <a
-          href="https://www.linkedin.com/in/antony-abellan-a758b024a/"
-          id="social"
-          target="_blank"
-          ><i class="bx bxl-linkedin"></i
-        ></a>
-        <a
-          href="https://github.com/Elerinna2a?tab=repositories"
-          id="social"
-          target="_blank"
-          ><i class="bx bxl-github"></i
-        ></a>
+    <!-- End Header -->
+
+    <!-- Hero Section  -->
+    <section id="hero">
+      <div class="hero container">
+        <div>
+          <h1>Salut, <span></span></h1>
+          <h1>Mon nom est <span></span></h1>
+          <h1>Abellan Antony <span></span></h1>
+          <a href="#projects" type="button" class="cta">Portfolio</a>
+          <div class="hero-social">
+            <a
+              href="https://twitter.com/AbellanAntony"
+              id="social"
+              target="_blank"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+            <a
+              href="https://www.linkedin.com/in/antony-abellan-a758b024a/"
+              id="social"
+              target="_blank"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+            <a
+              href="https://github.com/Elerinna2a?tab=repositories"
+              id="social"
+              target="_blank"
+              ><i class="bx bxl-github"></i
+            ></a>
+          </div>
+        </div>
       </div>
-      <p>All right reserved &copy; Project page Abellan Antony.</p>
-    </footer>
-    <!-- ===============  script ============= -->
-    <script type="text/javascript" src="/apps/Js/main.js"></script>
-    <script type="text/javascript" src="/apps/Js/menu.js"></script>
+    </section>
+    <!-- End Hero Section  -->
+
+    <!-- About Section -->
+    <section id="about">
+      <div class="about container">
+        <div class="col-left">
+          <div class="about-img">
+            <img src="./img/me.jpg" alt="img" />
+          </div>
+        </div>
+        <div class="col-right">
+          <h1 class="section-title">Apprend à <span>me</span> connaître</h1>
+          <p>
+            En cours de formation à Aflokkat pour devenir un développeur
+            d'applications web et mobiles. J'apprends chaque jour la profession
+            du développeur. Dans la section projets, vous trouverez l'ensemble
+            de mes projets académiques et personnels.
+          </p>
+          <p>
+            En téléchargeant mon C. V, tu trouveras toutes les informations sur
+            moi ainsi que mes compétences en matière de programmation.
+          </p>
+          <a
+            href="https://drive.google.com/u/0/uc?id=1RrmVb3WFjYyeEll3z8oDno2yE6XerBZf&export=download"
+            class="cta"
+            >Télécharger mon C.V</a
+          >
+        </div>
+        <div class="about__infos reveal-2"></div>
+      </div>
+    </section>
+    <!-- End About Section -->
+
+    <!-- Projects Section -->
+    <section id="projects">
+      <div class="projects container">
+        <div class="projects-header">
+          <h1 class="section-title"><span>Recent </span>Projets académiques</h1>
+        </div>
+        <div class="all-projects">
+          <div class="project-item">
+            <div class="project-info">
+              <a href="./pages/rpg.html">
+                <h1>Jeux RPG</h1>
+              </a>
+              <p>
+                Dans le cadre de ce projet, nous avons créé un jeu RPG (jeu de
+                rôle) en JAVA, principalement avec une programmation orientée
+                objet. Gestion des héros, des ennemis, des stocks.
+              </p>
+              <p id="github">
+                Vers github:
+                <a
+                  id="link-project"
+                  target="_blank"
+                  href="https://github.com/Elerinna2a/Java-learning/tree/main/First-game"
+                  >Jeux RPG</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <a target="_blank" href="img/gameRpgJava.png">
+                <img src="img/gameRpgJava.png" alt="img"
+              /></a>
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <a href="./pages/syracuse.html">
+                <h1>Projet Syracuse</h1>
+              </a>
+              <p>
+                Développement d'un programme récursif en JAVA qui calcule la
+                suite Syracuse, avec extraction de données au moyen d'un script
+                BASH.
+              </p>
+              <p id="github">
+                Vers github:
+                <a
+                  target="_blank"
+                  href="https://github.com/Elerinna2a/Projet-Syracuse"
+                  id="link-project"
+                  >Projet Syracuse</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/syracuse.jpg" alt="img" />
+            </div>
+          </div>
+          <div class="project-item">
+            <div class="project-info">
+              <a href="./pages/poule.html">
+                <h1>Projet embarqué d'un portail automatisé</h1>
+              </a>
+              <p>
+                Création d'un portail automatisé s'ouvrant au soleil et se
+                refermant au crépuscule avec Arduino.
+              </p>
+              <p id="github">
+                Vers github:
+                <a
+                  target="_blank"
+                  href="https://github.com/Elerinna2a/Projet-poulailler-Arduino"
+                  id="link-project"
+                  >Portail automatisé</a
+                >
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="img/portail.jpg" alt="img" />
+            </div>
+          </div>
+          <!-- <div class="project-item">
+            <div class="project-info">
+              <h1>Projet LEGO MINDSTORM</h1>
+              <p>
+                Développement d'un programme en PYTHON pour un robot LEGO
+                MINDSTORM qui avance vers la source lumineuse la plus forte.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/img-1.png" alt="img" />
+            </div>
+          </div> -->
+          <div class="project-item">
+            <div class="project-info">
+              <a href="pages/ecommerce.html">
+                <h1>Projet e-commerce</h1>
+              </a>
+              <p>
+                Création d'un modèle de vente en ligne en utilisant HTML5, SASS,
+                JAVASCRIPT.
+              </p>
+            </div>
+            <div class="project-img">
+              <img src="./img/ecommerce.png" alt="img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Projects Section -->
+
+    <!-- Footer -->
+    <section id="footer">
+      <div class="footer container">
+        <div class="brand">
+          <h1><span>A</span>bellan <span>A</span>ntony</h1>
+        </div>
+        <h2>Apprentit développeur web et mobile</h2>
+        <div class="social-icon">
+          <div class="social-item">
+            <a target="_blank" href="https://twitter.com/AbellanAntony"
+              ><i class="bx bxl-twitter"></i
+            ></a>
+          </div>
+          <div class="social-item">
+            <a
+              target="_blank"
+              href="https://www.linkedin.com/in/antony-abellan-a758b024a/"
+              ><i class="bx bxl-linkedin"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- End Footer -->
+    <script src="./app.js"></script>
   </body>
 </html>

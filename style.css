@@ -330,6 +330,96 @@ p {
 }
 /* End About Section */
 
+/* knowledges Section */
+
+#knowledges {
+  background-image: url(./img/bg.jpg);
+  background-size: cover;
+  background-position: top center;
+  position: relative;
+  z-index: 1;
+}
+#knowledges::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.7;
+  z-index: -1;
+}
+#knowledges .knowledges {
+  flex-direction: column;
+  max-width: 1500px;
+  margin: 0 auto;
+  padding: 100px 0;
+}
+#knowledges .knowledge-top {
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+#knowledges .knowledge-top .section-title {
+  color: white;
+}
+
+#knowledges .knowledge-bottom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+#knowledges .knowledge-item {
+  flex-basis: 80%;
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  padding: 30px;
+  border-radius: 10px;
+  background-size: cover;
+  margin: 10px 5%;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  background-image: linear-gradient(30deg, rgb(41, 50, 60) 80%, crimson 100%);
+}
+
+#knowledges .knowledge-bottom .icon {
+  height: 80px;
+  width: 80px;
+  margin-bottom: 20px;
+}
+#knowledges .knowledge-item h2 {
+  font-size: 2rem;
+  color: white;
+  text-transform: uppercase;
+  margin: 0 auto 20px auto;
+  text-decoration: underline;
+}
+
+#knowledges .knowledge-item span {
+  color: crimson;
+}
+
+.knowledge-list {
+  text-transform: uppercase;
+  text-align: justify;
+  width: 10rem;
+  height: 10rem;
+  margin: 0 auto;
+}
+
+.knowledge-list ul > li {
+  list-style: none;
+  color: white;
+  font-size: 1.5rem;
+}
+
+/* End knowledges Section */
+
 /* Projects section */
 #projects .projects {
   flex-direction: column;
@@ -512,12 +602,12 @@ p {
   }
   /* End Hero */
 
-  /* Services Section */
-  #services .service-bottom .service-item {
+  /* knowledges Section */
+  #knowledges .knowledge-bottom .knowledge-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
-  /* End Services Section */
+  /* End knowledges Section */
 
   /* Project */
   #projects .project-item {

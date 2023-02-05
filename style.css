@@ -384,7 +384,7 @@ p {
   position: relative;
   z-index: 1;
   overflow: hidden;
-  background-image: linear-gradient(30deg, rgb(41, 50, 60) 80%, crimson 100%);
+  background-image: linear-gradient(30deg, rgb(41, 50, 60) 20%, crimson 150%);
 }
 
 #knowledges .knowledge-bottom .icon {
@@ -393,7 +393,7 @@ p {
   margin-bottom: 20px;
 }
 #knowledges .knowledge-item h2 {
-  font-size: 2rem;
+  font-size: 3rem;
   color: white;
   text-transform: uppercase;
   margin: 0 auto 20px auto;

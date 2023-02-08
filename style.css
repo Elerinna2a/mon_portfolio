@@ -325,7 +325,6 @@ p {
   border: 7px solid crimson;
   z-index: -1;
 }
-
 /* knowledges Section */
 
 #knowledges {
@@ -416,6 +415,15 @@ p {
 }
 
 /* Projects section */
+
+#body-project {
+  background-color: rgb(0, 0, 0, 0.9);
+}
+
+#body-project .section-title {
+  color: white;
+}
+
 #projects .projects {
   flex-direction: column;
   max-width: 1200px;
@@ -425,6 +433,14 @@ p {
 
 #projects .projects-header h1 {
   margin: 50px 0;
+}
+
+#projects .projects-header .cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: max-content;
+  margin: 0 auto;
 }
 
 #projects .all-projects {

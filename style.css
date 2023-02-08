@@ -188,7 +188,6 @@ p {
 #header .hamburger.active .bar::after {
   top: 0;
 }
-/* End Header section */
 
 /* Hero Section */
 #hero {
@@ -278,8 +277,6 @@ p {
   font-size: 2rem;
 }
 
-/* End Hero Section */
-
 /* About Section */
 
 #about .about {
@@ -328,7 +325,6 @@ p {
   border: 7px solid crimson;
   z-index: -1;
 }
-/* End About Section */
 
 /* knowledges Section */
 
@@ -418,8 +414,6 @@ p {
   font-size: 1.5rem;
 }
 
-/* End knowledges Section */
-
 /* Projects section */
 #projects .projects {
   flex-direction: column;
@@ -506,7 +500,6 @@ p {
 #projects #link-project {
   color: crimson;
 }
-/* End Projects section */
 
 /* Footer */
 #footer {
@@ -550,7 +543,6 @@ p {
   color: white;
   font-size: 1.3rem;
 }
-/* End Footer */
 
 /* Keyframes */
 @keyframes hamburger_puls {
@@ -584,9 +576,8 @@ p {
     font-weight: 500;
   }
 }
-/* End Keyframes */
 
-/* Media Query For Tablet */
+/* Tablette */
 @media only screen and (min-width: 768px) {
   .cta {
     font-size: 2.5rem;
@@ -600,14 +591,12 @@ p {
   #hero h1 {
     font-size: 7rem;
   }
-  /* End Hero */
 
   /* knowledges Section */
   #knowledges .knowledge-bottom .knowledge-item {
     flex-basis: 45%;
     margin: 2.5%;
   }
-  /* End knowledges Section */
 
   /* Project */
   #projects .project-item {
@@ -628,7 +617,6 @@ p {
   #projects .all-projects .project-img {
     height: 100%;
   }
-  /* End Project */
 
   /* About */
   #about .about {
@@ -653,7 +641,6 @@ p {
   #about .col-right h1 {
     text-align: left;
   }
-  /* End About */
 
   /* contact  */
   #contact .contact {
@@ -687,11 +674,9 @@ p {
     text-align: left;
     padding-left: 20px;
   }
-  /* End contact  */
 }
-/* End Media Query For Tablet */
 
-/* Media Query For Desktop */
+/* Desktop */
 @media only screen and (min-width: 1200px) {
   /* header */
   #header .hamburger {
@@ -713,6 +698,4 @@ p {
   #header .nav-list ul a:after {
     display: none;
   }
-  /* End header */
 }
-/* End  Media Query For Desktop */
